@@ -31,7 +31,7 @@ export class Department extends Component{
 
     deleteDep(depid){
         if(window.confirm('Are you sure?')){
-            fetch(process.eny.REACT_APP_API+'department/'+ depid, {
+            fetch(process.env.REACT_APP_API+'department/'+ depid, {
                 method:'DELETE',
                 header:{'Accept': 'application/json',
                 'Content-Type': 'application/json'}
