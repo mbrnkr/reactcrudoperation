@@ -31,7 +31,7 @@ export class Employee extends Component{
 
     deleteEmp(empid){
         if(window.confirm('Are you sure?')){
-            fetch(process.eny.REACT_APP_API+'employee/'+ empid, {
+            fetch(process.env.REACT_APP_API+'employee/'+ empid, {
                 method:'DELETE',
                 header:{'Accept': 'application/json',
                 'Content-Type': 'application/json'}
